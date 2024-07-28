@@ -40,6 +40,6 @@
         "vite": "^5.3.4"
     },
     "lint-staged": {
-      "**/*": "prettier --write --ignore-unknown"
+
     }
 }
