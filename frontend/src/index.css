@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.root-grid {
+    display: grid;
+    grid-template-areas: 
+    "a a a a"
+    "b c c c"
+    "b c c c";
+    grid-template-rows: 100px 1fr;
+}
+
+.sidebar-grid {
+    grid-area: b;
+    grid-row-start: 2;
+}
+
+.navbar-grid {
+    grid-area: a;
+    z-index: 99;
+}
+
+.content-grid {
+    grid-area: c;
+    margin-top: -100px;
+}
