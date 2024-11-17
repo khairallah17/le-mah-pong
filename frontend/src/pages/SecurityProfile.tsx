@@ -69,12 +69,12 @@ export default function Security() {
               placeholder="**************"
               />
               <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-2 bg-white text-black rounded-lg hover:bg-white/90 transition-colors">
-              Verify & Enable
-              </button>
-              <button className="px-6 py-2 bg-[#BD3944] text-white rounded-lg hover:bg-red-600 transition-colors">
-              Disable 2FA
-              </button>
+                <button className="px-6 py-2 bg-white text-black rounded-lg hover:bg-white/90 transition-colors">
+                Verify & Enable
+                </button>
+                <button className="px-6 py-2 bg-[#BD3944] text-white rounded-lg hover:bg-red-600 transition-colors">
+                Disable 2FA
+                </button>
               </div>
               </div>
               <div className="flex w-full md:w-40 h-40 bg-white p-2 rounded-md">
