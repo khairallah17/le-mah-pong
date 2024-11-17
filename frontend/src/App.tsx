@@ -7,6 +7,8 @@ import Shop from "./pages/shop.tsx"
 import Overview from "./pages/dashboard/overview.tsx"
 import Game from "./pages/dashboard/game.tsx"
 import Leaderboard from "./pages/dashboard/leaderboard.tsx"
+import SearchPage from "./pages/SearchPage.tsx"
+import SecurityPage from "./pages/SecurityProfile.tsx"
 
 // CONTEXT PROVIDERS
 import Providers from "./providers/providers.tsx"
@@ -29,7 +31,9 @@ const App: React.FC = () => (
                             <Route path="dashboard/leaderboard" element={<Leaderboard/>}/>
                             <Route path="dashboard/chat" element={<Chat/>} />
                             <Route path="dashboard/shop" element={<Shop/>} />
-                            <Route path="dashboard/profile" element={<Profile/>} />
+                            <Route path="/profile" element={<Profile/>} />
+                            <Route path="/security" element={<SecurityPage/>} />
+                            <Route path="/SearchPage" element={<SearchPage/>} />
                         </Route>
                 </Routes>
             </Suspense>
