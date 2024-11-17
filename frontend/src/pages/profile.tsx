@@ -14,14 +14,14 @@ export default function Profile() {
       <p className="text-gray-500 front-inter"> Information necessary for your account  </p>
       <div className="flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex flex-col md:flex-row items-center gap-4">
-          <div className="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center text-white text-2xl font-inter">
+          <div className="w-20 h-20 bg-purple-500 rounded-full border-2 border-white/80 flex items-center justify-center text-white text-2xl font-inter">
             {firstName[0]}{lastName[0]}
           </div>
           <div className="space-y-2 text-center md:text-left">
-            <h3 className="font-inter text-white text-sm">Profile Picture</h3>
-            <p className="text-sm text-white/70">PNG, JPEG under 15MB</p>
-            <div className="flex flex-wrap justify-center md:justify-start gap-3">
-              <label className="px-6 py-2 bg-white text-black rounded-md hover:bg-white/90 transition-colors cursor-pointer">
+            <h3 className="px-4 font-inter text-white text-sm">Profile Picture</h3>
+            <p className="px-4 text-sm text-white/70">PNG, JPEG under 15MB</p>
+            <div className="px-4 flex flex-wrap justify-center md:justify-start gap-3">
+              <label className="px-6 py-2 bg-white text-black rounded-md  hover:bg-white/90 transition-colors cursor-pointer">
                 <input type="file" className="hidden" accept="image/*" />
                 Upload an image
               </label>
@@ -31,7 +31,7 @@ export default function Profile() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row items-center gap-4">
+        <div className="flex items-start md:flex-row gap-6">
           <img
             src="https://github.com/shadcn.png"
             alt="Wolf Avatar"

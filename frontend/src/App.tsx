@@ -9,10 +9,10 @@ import Game from "./pages/dashboard/game.tsx"
 import Leaderboard from "./pages/dashboard/leaderboard.tsx"
 import SearchPage from "./pages/SearchPage.tsx"
 import SecurityPage from "./pages/SecurityProfile.tsx"
+import Profile from "./pages/profile.tsx"
 
 // CONTEXT PROVIDERS
 import Providers from "./providers/providers.tsx"
-import Profile from "./pages/profile.tsx"
 
 // SUSPENSE BOUNDARY
 import { Suspense } from "react"
@@ -31,9 +31,9 @@ const App: React.FC = () => (
                             <Route path="dashboard/leaderboard" element={<Leaderboard/>}/>
                             <Route path="dashboard/chat" element={<Chat/>} />
                             <Route path="dashboard/shop" element={<Shop/>} />
-                            <Route path="/profile" element={<Profile/>} />
-                            <Route path="/security" element={<SecurityPage/>} />
-                            <Route path="/SearchPage" element={<SearchPage/>} />
+                            <Route path="dashboard/profile" element={<Profile/>} />
+                            <Route path="dashboard/security" element={<SecurityPage/>} />
+                            <Route path="dashboard/SearchPage" element={<SearchPage/>} />
                         </Route>
                 </Routes>
             </Suspense>
